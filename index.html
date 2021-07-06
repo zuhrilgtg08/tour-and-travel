@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--awal header-->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!--akhir header-->
+
+    <!--awal login form container-->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="your email">
+            <input type="password" class="box" placeholder="your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember account</label>
+            <p>forgot password? <a href="#">click here</a></p>
+            <p>don't have account? <a href="#">create account</a></p>
+        </form>
+    </div>
+    <!--akhir login form container-->
+
+    <!--awal section home-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>start your adventure</h3>
+            <p>Dengan berpetualang kamu bisa menambah wawasan, dan menguji jiwa kepemimpinanmu</p>
+            <a href="#" class="btn">let's start</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!--akhir section home-->
+
+    <!--awal section book-->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>m</span>
+            <span>y</span>
+            <span class="space"></span>
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/book-img.svg" alt="bookSvg">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to go</h3>
+                    <input type="text" placeholder="nama tempat">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="jumlah yang ikut">
+                </div>
+                <div class="inputBox">
+                    <h3>will go</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>back on date</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="enter">
+            </form>
+        </div>
+    </section>
+    <!--akhir section book-->
+
+    <!--awal section packages-->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/p-1.jpg" alt="gambar1">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                    <p>Mumbai adalah ibu kota negara bagian India Maharashtra. Kota ini merupakan kota aglomerasi.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rp. 1.000.000 <span>Rp.1.200.000</span> </div>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p-2.jpg" alt="gambar2">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> sydney </h3>
+                    <p>Sydney adalah kota terbesar di Australia, dan ibu kota negara bagian New South Wales.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rp. 3.200.000 <span>Rp. 3.750.000</span> </div>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p-3.jpg" alt="gambar3">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                    <p>Hawaii adalah satu-satunya negara bagian di AS yang terpisah dari benua Amerika.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rp. 5.200.000 <span>Rp. 6.750.000</span> </div>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p-4.jpg" alt="gambar4">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> paris </h3>
+                    <p>Paris adalah ibu kota Prancis. Terletak di sungai Seine, di utara Prancis, di jantung region Île-de-France.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rp. 7.250.000 <span>Rp. 8.000.000</span> </div>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p-5.jpg" alt="gambar5">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> tokyo </h3>
+                    <p>tokyo, nama resminya Metropolis Tokyo, adalah salah satu dari 47 prefektur Jepang yang menjadi ibu kota Jepang sejak 1869.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rp. 5.200.000 <span>Rp. 6.750.000</span> </div>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p-6.jpg" alt="gambar6">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> eypt </h3>
+                    <p>Mesir, nama resmi Republik Arab Mesir adalah sebuah negara yang sebagian besar wilayahnya terletak di Afrika bagian timur laut</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rp. 10.200.000 <span>Rp. 12.350.000</span> </div>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--akhir section packages-->
+
+    <!--awal section services-->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotel service</h3>
+                <p>Nikmati perjalanan dari atau ke Bandara Internasional dengan layanan kami.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>consumption</h3>
+                <p>mendapat menu tambahan berupa snack pagi yang diberikan saat makan malam dan paket kelengkapan konsumsi.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>stay safe</h3>
+                <p>meningkatkan keselamatan dan membuka akses untuk bekerja guna memberi bantuan kemanusiaan kepada penerima bantuan.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>different countries</h3>
+                <p>pemroduksi pesan harus paham regulasi apa saja dan nilai apa saja yang harus diperhatikan.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>smooth travels</h3>
+                <p>menetapkan empat kriteria dan syarat dalam melakukan perjalanan.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventure</h3>
+                <p>pergi ke negara lain atau daerah lainnya masih di batasi, namun bukan berarti tidak bisa menikmatinya.</p>
+            </div>
+        </div>
+    </section>
+    <!--akhir section services-->
+
+    <!--awal section gallery-->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/g-1.jpg" alt="gallery1">
+                <div class="content">
+                    <h3>tiki island</h3>
+                    <p>pulau tiki adalah salah satu pulau terindah yang berada di kota mexico</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-2.jpg" alt="gallery2">
+                <div class="content">
+                    <h3>amazon island</h3>
+                    <p>pulau amazon adalah salah satu pulau yang teletak di negara amerika</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-3.jpg" alt="gallery3">
+                <div class="content">
+                    <h3>tugu bangsa romawi</h3>
+                    <p>tugu ini merupakan bukti peninggalan sejarah bangsa romawi kuno</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-4.jpg" alt="gallery4">
+                <div class="content">
+                    <h3>candi borobudur</h3>
+                    <p>candi borobudur merupakan salah satu objek wisata di negara indobesia</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-5.jpg" alt="gallery5">
+                <div class="content">
+                    <h3>tugu roma</h3>
+                    <p>tugu ini menjadi objek wisata di negara italia terletak di pusat kota</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-6.jpg" alt="gallery6">
+                <div class="content">
+                    <h3>lombok island</h3>
+                    <p>pulau lombok juga banyak dikunjungi oleh turis luar negeri</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-7.jpg" alt="gallery7">
+                <div class="content">
+                    <h3>amazing ballon</h3>
+                    <p>festival balon udara biasanya diadakan 2 minggu sekali di russia</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-8.jpg" alt="gallery8">
+                <div class="content">
+                    <h3>bukit semeru</h3>
+                    <p>bukit semeru merupakan salah satu objek wisata di indonesia</p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/g-9.jpg" alt="gallery9">
+                <div class="content">
+                    <h3>piramida</h3>
+                    <p> piramida di Mesir merupakan piramida kuno </p>
+                    <a href="#" class="btn">selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--akhir section gallery-->
+
+    <!--awal section review-->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="review-slider">
+            <div class="wrapper">
+                <div class="slide">
+                    <div class="box">
+                        <img src="img/anak hits.jfif" alt="1">
+                        <h3>auliya</h3>
+                        <p>keren sekali pelayanannya sangat memuaskan. kamu bisa ajak dia dengan tempat - tempat baru yang lagi hits di kalangan traveler. </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="box">
+                        <img src="img/anak hits 2.jfif" alt="2">
+                        <h3>risky morgan</h3>
+                        <p>hotel yang disewakan sangat terjangkau dan modern. Memberi informasi seputar tiket murah adalah salah satu cara agar teman kamu mau traveling sama kamu. Coba aja! Pasti berhasil.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="box">
+                        <img src="img/anak hits 3.jfif" alt="3">
+                        <h3>angga zain</h3>
+                        <p>terimakasih atas perjalanan yang diberikan. Kamu bisa menyebutkan beberapa tempat di sekitar foto yang ia ambil agar ia merasa harus datang lagi ke tempat itu bersamamu.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="box">
+                        <img src="img/anak hits 4.jfif" alt="4">
+                        <h3>maulana</h3>
+                        <p>makanannya sangat berkelas dan terjangkau. penginapan memang yang terpenting. villa atau beberapa hal yang bikin irit akan membuat beberapa orang untuk traveling. Coba, deh!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--akhir section review-->
+
+    <!--awal form contsct-->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+            <img src="img/contact-img.svg" alt="form-contact">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="nomor telp">
+                <input type="text" placeholder="coment">
+            </div>
+            <textarea placeholder="tulis pesan" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="kirim">
+        </form>
+        </div>
+    </section>
+    <!--akhir form contact-->
+
+    <!--awal footer section-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>menerima layanan tour and travel, siap melayani anda</p>
+            </div>
+
+            <div class="box">
+                <h3>sponsor by</h3>
+                <a href="#">indoneisa</a>
+                <a href="#">japan</a>
+                <a href="#">USA</a>
+                <a href="#">france</a>
+            </div>
+
+            <div class="box">
+                <h3>link section</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="https://www.instagram.com/zuhrillfilm/" target="_blank">instagram</a>
+                <a href="https://zuhrilgtg08.github.io/Profiles-portfolio/" target="_blank">my profiles</a>
+                <a href="#">telegram</a>
+            </div>
+        </div>
+        <h1 class="credit">created by <span> ahmad zuhril </span> | all rights reserved! </h1>
+    </section>
+    
+    <!--akhir footer section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
